@@ -6,7 +6,7 @@ import {
   MessageSquare,
   CheckCircle2,
 } from "lucide-react";
-import { MobileAppPreview } from "@/app/components/ui/mobile-app-preview";
+import { MobileAppPreview } from "@/components/ui/mobile-app-preview";
 
 export function CrewDayPlanSection() {
   const features = [

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap } from "lucide-react";
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export function CompetitiveCallout() {
   return (

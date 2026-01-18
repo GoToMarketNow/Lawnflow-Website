@@ -1,5 +1,5 @@
-import { IPhoneShell } from "@/app/components/ui/iphone-shell";
-import { MobileAppPreview } from "@/app/components/ui/mobile-app-preview";
+import { IPhoneShell } from "@/components/ui/iphone-shell";
+import { MobileAppPreview } from "@/components/ui/mobile-app-preview";
 import {
   MapPin,
   CheckCircle,

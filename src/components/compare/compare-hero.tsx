@@ -1,4 +1,4 @@
-import { Badge } from "@/app/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 export function CompareHero() {
   const legendItems = [

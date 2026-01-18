@@ -6,7 +6,7 @@ import {
   MessageCircle,
   Star,
 } from "lucide-react";
-import { MobileAppPreview } from "@/app/components/ui/mobile-app-preview";
+import { MobileAppPreview } from "@/components/ui/mobile-app-preview";
 
 export function CustomerAppSection() {
   const features = [

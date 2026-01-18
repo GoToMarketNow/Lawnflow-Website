@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
-import { MobileAppPreview } from "@/app/components/ui/mobile-app-preview";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { MobileAppPreview } from "@/components/ui/mobile-app-preview";
 import { ArrowRight, Play, CheckCircle } from "lucide-react";
 
 export function NewHeroSection() {

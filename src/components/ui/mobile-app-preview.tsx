@@ -1,4 +1,4 @@
-import { IPhoneShell } from "@/app/components/ui/iphone-shell";
+import { IPhoneShell } from "@/components/ui/iphone-shell";
 import {
   Home,
   Calendar,
