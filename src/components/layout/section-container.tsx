@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 interface SectionContainerProps {
   eyebrow?: string;
