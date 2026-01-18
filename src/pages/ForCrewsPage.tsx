@@ -1,8 +1,11 @@
+import { ForCrewsHero } from "@/components/for-crews/for-crews-hero"
+import { CrewDayPlanSection } from "@/components/for-crews/crew-day-plan-section"
+
 export default function ForCrewsPage() {
   return (
-    <div>
-      <h1>For Crews Page</h1>
-      {/* Sections will be imported here */}
-    </div>
+    <>
+      <ForCrewsHero />
+      <CrewDayPlanSection />
+    </>
   )
 }

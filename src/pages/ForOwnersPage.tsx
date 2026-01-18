@@ -1,8 +1,13 @@
+import { ForOwnersHero } from "@/components/for-owners/for-owners-hero"
+import { OwnerDashboardShowcase } from "@/components/for-owners/owner-dashboard-showcase"
+import { BeforeAfterSection } from "@/components/for-owners/before-after-section"
+
 export default function ForOwnersPage() {
   return (
-    <div>
-      <h1>For Owners Page</h1>
-      {/* Sections will be imported here */}
-    </div>
+    <>
+      <ForOwnersHero />
+      <OwnerDashboardShowcase />
+      <BeforeAfterSection />
+    </>
   )
 }
