@@ -87,77 +87,78 @@ LawnFlow.ai is a comprehensive marketing website built to showcase an AI-powered
 ## 📁 Project Structure
 
 ```
-lawnflow-marketing/
+Lawnflow-Website/
 ├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── agents/          # AI agent showcase components
-│   │   │   ├── compare/         # Competitive comparison components
-│   │   │   ├── for-crews/       # Crew-specific components
-│   │   │   ├── for-customers/   # Customer-specific components
-│   │   │   ├── for-owners/      # Owner-specific components
-│   │   │   ├── home/            # Home page sections
-│   │   │   ├── how-it-works/    # How It Works page components
-│   │   │   ├── layout/          # Header, Footer, Navigation
-│   │   │   ├── screens/         # Screen & Flow components
-│   │   │   ├── ui/              # Reusable UI components
-│   │   │   │   ├── iphone-shell.tsx           # iPhone mockup frame
-│   │   │   │   ├── mobile-app-preview.tsx     # Pre-built mobile screens
-│   │   │   │   └── [50+ UI components]
-│   │   │   └── waitlist/        # Waitlist capture components
-│   │   ├── pages/               # Page-level components
-│   │   │   ├── home-page.tsx
-│   │   │   ├── waitlist-page.tsx
-│   │   │   ├── how-it-works-page.tsx
-│   │   │   ├── for-owners-page.tsx
-│   │   │   ├── for-crews-page.tsx
-│   │   │   ├── for-customers-page.tsx
-│   │   │   ├── agents-page.tsx
-│   │   │   ├── screens-page.tsx
-│   │   │   └── compare-page.tsx
-│   │   ├── App.tsx              # Root component with routing
-│   │   └── design-system.ts     # Design system documentation
-│   └── styles/
-│       ├── index.css            # Main entry CSS
-│       ├── tailwind.css         # Tailwind imports
-│       ├── theme.css            # CSS custom properties (design tokens)
-│       └── fonts.css            # Font imports
-├── SPRINT_1_DOCUMENTATION.md
-├── SPRINT_2_DOCUMENTATION.md
-├── SPRINT_3_DOCUMENTATION.md
-├── SPRINT_7_DOCUMENTATION.md
-├── package.json
-├── vite.config.ts
-├── postcss.config.mjs
-└── README.md                    # This file
+│   ├── main.tsx                 # Application entry point
+│   ├── App.tsx                  # Root component with routing
+│   ├── pages/                   # Page components (one per route)
+│   │   ├── HomePage.tsx
+│   │   ├── HowItWorksPage.tsx
+│   │   ├── ForOwnersPage.tsx
+│   │   ├── ForCrewsPage.tsx
+│   │   ├── ForCustomersPage.tsx
+│   │   ├── AgentsPage.tsx
+│   │   ├── ComparePage.tsx
+│   │   └── ScreensPage.tsx
+│   ├── components/              # Reusable components
+│   │   ├── layout/              # Header, Footer, Navigation
+│   │   ├── ui/                  # UI component library (47 components)
+│   │   │   ├── iphone-shell.tsx           # iPhone mockup frame
+│   │   │   ├── mobile-app-preview.tsx     # Pre-built mobile screens
+│   │   │   └── [45+ more UI components]
+│   │   ├── agents/              # AI agent showcase sections
+│   │   ├── home/                # Home page sections
+│   │   ├── how-it-works/        # How It Works page sections
+│   │   ├── for-owners/          # Owner-specific sections
+│   │   ├── for-crews/           # Crew-specific sections
+│   │   ├── for-customers/       # Customer-specific sections
+│   │   ├── screens/             # Screen & Flow sections
+│   │   ├── compare/             # Comparison page sections
+│   │   └── competitive/         # Competitive positioning sections
+│   ├── lib/                     # Utility functions
+│   │   └── utils.ts             # Helper utilities (cn function)
+│   ├── styles/                  # Global styles
+│   │   └── globals.css          # Tailwind CSS imports
+│   └── types/                   # TypeScript type definitions
+├── docs/                        # Documentation
+│   ├── BASELINE.md              # Pre-refactoring state
+│   ├── INVENTORY.md             # File inventory
+│   ├── STRUCTURE.md             # Project structure guide
+│   └── CHANGES.md               # Refactoring change log
+├── public/                      # Static assets
+├── dist/                        # Build output (gitignored)
+├── package.json                 # Project configuration
+├── tsconfig.json                # TypeScript configuration
+├── vite.config.ts               # Vite build configuration
+├── .eslintrc.json               # ESLint configuration
+├── .prettierrc                  # Prettier configuration
+└── index.html                   # HTML entry point
 ```
+
+**See [docs/STRUCTURE.md](docs/STRUCTURE.md) for detailed structure documentation.**
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - **Node.js** 18+ (LTS recommended)
-- **pnpm** (recommended) or npm/yarn
+- **npm** 9+ (package manager)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/lawnflow-marketing.git
-   cd lawnflow-marketing
+   git clone https://github.com/GoToMarketNow/Lawnflow-Website.git
+   cd Lawnflow-Website
    ```
 
 2. **Install dependencies**
    ```bash
-   pnpm install
-   # or
    npm install
    ```
 
 3. **Start development server**
    ```bash
-   pnpm build
-   # or
-   npm run build
+   npm run dev
    ```
 
 4. **Open in browser**
@@ -170,13 +171,26 @@ lawnflow-marketing/
 ### Available Scripts
 
 ```bash
+# Start development server
+npm run dev
+
 # Build for production
-pnpm build
 npm run build
 
 # Preview production build locally
-pnpm preview
 npm run preview
+
+# Run TypeScript type checking
+npm run type-check
+
+# Run ESLint
+npm run lint
+
+# Fix auto-fixable lint issues
+npm run lint:fix
+
+# Format code with Prettier
+npm run format
 ```
 
 ### Development Workflow
